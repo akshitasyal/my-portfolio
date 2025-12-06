@@ -6,36 +6,35 @@ import Link from 'next/link'
 
 const PROJECTS: Project[] = [
   {
+    id: 'ai-resume-analyzer',
+    title: 'AI Resume Analyzer',
+    subtitle: 'Smart Resume Screening Tool',
+    description:
+      'An AI-powered web application that analyzes resumes for ATS compatibility, skill matching, and job relevance. Built to help users optimize resumes with real-time feedback, structured insights, and smart recommendations.',
+    image: '/ai-resume-analyzer.png',
+    href: 'https://airesume-analyzer-eight.vercel.app/',
+  },
+  {
+    id: 'news-portal',
+    title: 'News Portal Web App',
+    subtitle: 'Live News Aggregation Platform (Demo)',
+    description:
+      'A responsive news portal demo that displays live-style headlines across categories with search and clean UI.',
+    image: '/news-portal.png',
+    href: 'https://news-portal-rmgb.vercel.app/',
+
+  },
+  {
     id: 'calm-llama',
     title: 'Calm Llama - AI Chatbot',
     subtitle: 'Wellness booking platform',
     description:
-      "A modern web platform that enables users to discover and book premium wellness experiences. Real-time availability, secure payments and instant confirmations.",
-    image: '/projects/calm-llama.png',
-    href: '/projects/calm-llama',
+      " Worked as a Full Stack Freelance developer and developed a modern web platform that enables users to discover and book premium wellness experiences. Real-time availability, secure payments and instant confirmations.",
+    image: '/calm-llama.png',
+    href: 'https://calmllama.life/',
 
   },
-  {
-    id: 'mini-otio',
-    title: 'Mini Otio - AI Research Assistant',
-    subtitle: 'Intelligent research & summarization',
-    description:
-      'AI research assistant combining real-time web search with intelligent response generation and structured output formats.',
-    image: '/projects/mini-otio.png',
-    href: '/projects/mini-otio',
-
-  },
-  {
-    id: 'ec2-cost',
-    title: 'EC2 Cloud Cost Analyzer',
-    subtitle: 'AWS cost visibility',
-    description:
-      'Tool to analyze and visualize AWS EC2 costs. Compare instances, drill into time ranges and export reports.',
-    image: '/projects/ec2-cost.png',
-    href: '/projects/ec2-cost',
-
-  },
-  // add more projects here...
+ 
 ]
 
 export default function ProjectsSection() {
@@ -70,7 +69,8 @@ export default function ProjectsSection() {
 
         {/* grid */}
         <div
-          className={`grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 transition-all duration-700 ${visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
+          className={`grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 items-stretch transition-all duration-700 ${
+          visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
             }`}
         >
           {PROJECTS.map((p) => (

@@ -5,40 +5,40 @@ import ProjectCard, { Project } from "@/components/ProjectCard";
 
 const PROJECTS: Project[] = [
     {
-        id: "calm-llama",
-        title: "Calm Llama - AI Chatbot",
-        subtitle: "Wellness booking platform",
+        id: 'ai-resume-analyzer',
+        title: 'AI Resume Analyzer',
+        subtitle: 'Smart Resume Screening Tool',
         description:
-            "A modern web platform that enables users to discover and book premium wellness experiences. Real-time availability, secure payments and instant confirmations. Built as a full-stack solution.",
-        image: "/projects/calm-llama.png",
-        href: "/projects/calm-llama",
+            'An AI-powered web application that analyzes resumes for ATS compatibility, skill matching, and job relevance. Built to help users optimize resumes with real-time feedback, structured insights, and smart recommendations.',
+        image: '/ai-resume-analyzer.png',
+        href: 'https://airesume-analyzer-eight.vercel.app/',
     },
     {
-        id: "mini-otio",
-        title: "Mini Otio - AI Research Assistant",
-        subtitle: "Intelligent research & summarization",
+        id: 'news-portal',
+        title: 'News Portal Web App',
+        subtitle: 'Live News Aggregation Platform (Demo)',
         description:
-            "AI-powered research assistant combining web search and intelligent response generation. Produces structured answers, step-by-step guides, and multiple output formats.",
-        image: "/projects/mini-otio.png",
-        href: "/projects/mini-otio",
+            'A responsive news portal demo that displays live-style headlines across categories with search and clean UI.',
+        image: '/news-portal.png',
+        href: 'https://news-portal-rmgb.vercel.app/',
     },
     {
-        id: "ec2-cost",
-        title: "EC2 Cloud Cost Analyzer",
-        subtitle: "AWS cost visibility",
+        id: 'calm-llama',
+        title: 'Calm Llama - AI Chatbot',
+        subtitle: 'Wellness booking platform',
         description:
-            "Tool to analyze and visualize AWS EC2 costs. Compare instances, drill into time ranges and export reports. Designed for cloud finance & ops teams.",
-        image: "/projects/ec2-cost.png",
-        href: "/projects/ec2-cost",
+            " Worked as a Full Stack Freelance developer and developed a modern web platform that enables users to discover and book premium wellness experiences. Real-time availability, secure payments and instant confirmations.",
+        image: '/calm-llama.png',
+        href: 'https://calmllama.life',
     },
     {
-        id: "oias",
-        title: "Online Interview Assessment System (OIAS)",
-        subtitle: "Online interview & assessment",
+        id: 'netflix-clone',
+        title: 'Netflix Clone',
+        subtitle: 'Streaming UI Web App',
         description:
-            "A fully functional Online Interview Assessment System for Students and Professionals enabling real-time interviews, automated assessments, and secure communication.",
-        image: "/projects/oias.png",
-        href: "https://your-live-site.example/oias",
+            'A responsive Netflix clone built with ReactJS and Sass, featuring real-time data from APIs and dynamic movie content rendering.',
+        image: '/free-netflix-clone.png',
+        href: 'https://free-netflix-clone.vercel.app/',
 
     },
     {
