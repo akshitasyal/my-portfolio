@@ -16,7 +16,7 @@ export default function FeaturedWork() {
                 </h2>
 
                 <div className="mt-8 max-w-xl">
-                    <p className="font-mono text-lg text-gray-300 leading-8">
+                    <p className="text-lg leading-7 text-gray-300/90 font-sans">
                         During my internship at <strong>Innerstep</strong> Designed and developed the complete frontend for Innerstep’s web platform,
                         including responsive UI, dashboard components, and the full chatbot system built
                         to streamline user interactions.
@@ -26,6 +26,8 @@ export default function FeaturedWork() {
                         <Link
                             href="https://innerstepjourneys.com"
                             className="inline-flex items-center gap-2 px-5 py-3 rounded-full bg-white text-black text-sm font-medium shadow-md hover:scale-[1.03] transition"
+                            target="_blank"
+                            rel="noopener noreferrer"
                         >
                             <svg
                                 width="16"
@@ -43,7 +45,7 @@ export default function FeaturedWork() {
                             </svg>
                             View Project
                         </Link>
-                        </div>
+                    </div>
                 </div>
             </div>
 

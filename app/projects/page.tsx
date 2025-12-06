@@ -14,13 +14,14 @@ const PROJECTS: Project[] = [
         href: 'https://airesume-analyzer-eight.vercel.app/',
     },
     {
-        id: 'news-portal',
-        title: 'News Portal Web App',
-        subtitle: 'Live News Aggregation Platform (Demo)',
-        description:
-            'A responsive news portal demo that displays live-style headlines across categories with search and clean UI.',
-        image: '/news-portal.png',
-        href: 'https://news-portal-rmgb.vercel.app/',
+       id: 'ec2-cloud-cost-analyzer',
+title: 'EC2 Cloud Cost Analyzer',
+subtitle: 'AWS Cost Optimization Web App',
+description:
+  'A cloud cost monitoring tool that analyzes AWS EC2 instance pricing in real time, helping users compare instance types, track usage-based costs, and optimize cloud spending efficiently.',
+image: '/ec2-cloud-cost-analyzer.png',
+href: 'https://ec2-observe.vercel.app/',
+
     },
     {
         id: 'calm-llama',
@@ -32,33 +33,33 @@ const PROJECTS: Project[] = [
         href: 'https://calmllama.life',
     },
     {
-        id: 'netflix-clone',
+       id: 'mini-otio',
+title: 'Mini Otio',
+subtitle: 'AI Research Assistant',
+description:
+  'An AI-powered research assistant that combines real-time web search with intelligent response generation, offering streamed answers in multiple formats with bookmark and export features.',
+image: '/mini-otio.png',
+href: 'https://mini-otio.vercel.app/',
+
+    },
+    {
+        id: 'news-portal',
+        title: 'News Portal Web App',
+        subtitle: 'Live News Aggregation Platform (Demo)',
+        description:
+            'A responsive news portal demo that displays live-style headlines across categories with search and clean UI.',
+        image: '/news-portal.png',
+        href: 'https://news-portal-rmgb.vercel.app/',
+
+    },
+    {
+       id: 'netflix-clone',
         title: 'Netflix Clone',
         subtitle: 'Streaming UI Web App',
         description:
             'A responsive Netflix clone built with ReactJS and Sass, featuring real-time data from APIs and dynamic movie content rendering.',
         image: '/free-netflix-clone.png',
         href: 'https://free-netflix-clone.vercel.app/',
-
-    },
-    {
-        id: "ecommerce-site",
-        title: "Ecommerce / Business Site",
-        subtitle: "Corporate website UI",
-        description:
-            "A modern corporate website with marketing pages, contact flows, and CMS powered content, built for a logistics client.",
-        image: "/projects/ecommerce.png",
-        href: "https://your-live-site.example/ecommerce",
-
-    },
-    {
-        id: "project-6",
-        title: "Another Showcase Project",
-        subtitle: "Utility / Dashboard",
-        description:
-            "Dashboard style app with charts and analytics, exportable reports and role based access control.",
-        image: "/projects/dashboard.png",
-        href: "https://your-live-site.example/dashboard",
 
     },
 ];

@@ -15,13 +15,14 @@ const PROJECTS: Project[] = [
     href: 'https://airesume-analyzer-eight.vercel.app/',
   },
   {
-    id: 'news-portal',
-    title: 'News Portal Web App',
-    subtitle: 'Live News Aggregation Platform (Demo)',
-    description:
-      'A responsive news portal demo that displays live-style headlines across categories with search and clean UI.',
-    image: '/news-portal.png',
-    href: 'https://news-portal-rmgb.vercel.app/',
+    id: 'ec2-cloud-cost-analyzer',
+title: 'EC2 Cloud Cost Analyzer',
+subtitle: 'AWS Cost Optimization Web App',
+description:
+  'A cloud cost monitoring tool that analyzes AWS EC2 instance pricing in real time, helping users compare instance types, track usage-based costs, and optimize cloud spending efficiently.',
+image: '/ec2-cloud-cost-analyzer.png',
+href: 'https://ec2-observe.vercel.app/',
+
 
   },
   {

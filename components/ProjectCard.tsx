@@ -46,6 +46,8 @@ export default function ProjectCard({ project }: { project: Project }) {
           <div className="mt-auto pt-5 flex items-center justify-between">
             <Link
               href={project.href ?? "#"}
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-5 py-3 rounded-full bg-white text-black text-sm font-medium shadow-md hover:scale-[1.03] transition"
             >
               <svg

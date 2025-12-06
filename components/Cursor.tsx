@@ -1,19 +1,34 @@
+'use client'
+
 import React, { useEffect, useRef } from 'react'
 
-export default function cursor() {
-const ref = useRef<HTMLDivElement | null>(null)
-  const pos = useRef({ x: window.innerWidth / 2, y: window.innerHeight / 2 })
-  const mouse = useRef({ x: pos.current.x, y: pos.current.y })
+export default function Cursor() {
+  const ref = useRef<HTMLDivElement | null>(null)
+
+  // ✅ SAFE DEFAULT — no window usage here
+  const pos = useRef({ x: 0, y: 0 })
+  const mouse = useRef({ x: 0, y: 0 })
   const req = useRef<number | null>(null)
 
   useEffect(() => {
+    // ✅ Now window is safe here
+    pos.current = {
+      x: window.innerWidth / 2,
+      y: window.innerHeight / 2
+    }
+
+    mouse.current = {
+      x: pos.current.x,
+      y: pos.current.y
+    }
+
     const move = (e: MouseEvent) => {
       mouse.current.x = e.clientX
       mouse.current.y = e.clientY
     }
 
     const touch = (e: TouchEvent) => {
-      if (e.touches && e.touches[0]){
+      if (e.touches && e.touches[0]) {
         mouse.current.x = e.touches[0].clientX
         mouse.current.y = e.touches[0].clientY
       }
@@ -23,14 +38,14 @@ const ref = useRef<HTMLDivElement | null>(null)
     window.addEventListener('touchstart', touch)
     window.addEventListener('touchmove', touch)
 
-    const lerp = (a:number, b:number, n:number) => a + (b - a) * n
+    const lerp = (a: number, b: number, n: number) => a + (b - a) * n
 
     const loop = () => {
       pos.current.x = lerp(pos.current.x, mouse.current.x, 0.18)
       pos.current.y = lerp(pos.current.y, mouse.current.y, 0.18)
 
-      if (ref.current){
-        ref.current.style.transform = `translate3d(${pos.current.x}px, ${pos.current.y}px,0) translate(-50%, -50%)`
+      if (ref.current) {
+        ref.current.style.transform = `translate3d(${pos.current.x}px, ${pos.current.y}px, 0) translate(-50%, -50%)`
       }
 
       req.current = requestAnimationFrame(loop)
@@ -46,13 +61,14 @@ const ref = useRef<HTMLDivElement | null>(null)
     }
   }, [])
 
-  // hover state wiring for interactive elements
+  // ✅ Hover state handling
   useEffect(() => {
     const addHover = () => document.body.classList.add('cursor-hover')
     const removeHover = () => document.body.classList.remove('cursor-hover')
 
     const selector = 'a, button, input, textarea, select, .interactive'
     const interactive = Array.from(document.querySelectorAll(selector)) as Element[]
+
     interactive.forEach(el => {
       el.addEventListener('mouseenter', addHover)
       el.addEventListener('mouseleave', removeHover)
@@ -68,7 +84,9 @@ const ref = useRef<HTMLDivElement | null>(null)
 
   return (
     <div ref={ref} className="custom-cursor" aria-hidden>
-      <div className="ring"><div className="dot" /></div>
+      <div className="ring ">
+        <div className="dot" />
+      </div>
     </div>
   )
 }

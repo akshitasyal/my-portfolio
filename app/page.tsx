@@ -5,7 +5,8 @@ import ProjectsSection from '@/components/ProjectSection'
 
 export default function Page(){
   return (
-    <div className="h-screen w-screen overflow-y-auto snap-y snap-mandatory scroll-smooth">
+    <div  id="page-scroll" 
+      className="h-screen w-screen overflow-y-auto snap-y snap-mandatory scroll-smooth">
       <HeroPage />
       <Expertise />
       <FeaturedWork />  

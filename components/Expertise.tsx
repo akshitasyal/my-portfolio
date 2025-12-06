@@ -3,17 +3,19 @@ import React from "react";
 
 export default function Expertise() {
     return (
-        <section  className="snap-start relative min-h-screen w-full flex flex-col items-center justify-start py-20"
-      aria-label="Expertise"
+        <section
+            id="expertise"
+            className="snap-start relative min-h-screen w-full flex flex-col items-center justify-start py-20"
+            aria-label="Expertise"
             style={{
                 backgroundColor: "#0d1a21",
                 background: "radial-gradient(circle at 50% 0%, #0f1a22 0%, #0b141b 45%, #080d11 80%, #05090c 100%)"
             }}>
-                {/* subtle top fade so this section blends with the hero above */}
-<div
-  aria-hidden="true"
-  className="absolute inset-x-0 top-0 h-[160px] pointer-events-none blend-fade-top"
-/>
+            {/* subtle top fade so this section blends with the hero above */}
+            <div
+                aria-hidden="true"
+                className="absolute inset-x-0 top-0 h-[160px] pointer-events-none blend-fade-top"
+            />
 
             <div className="w-full max-w-6xl px-6">
                 {/* Title */}
