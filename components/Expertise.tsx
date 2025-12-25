@@ -5,7 +5,7 @@ export default function Expertise() {
     return (
         <section
             id="expertise"
-            className="snap-start relative min-h-screen w-full flex flex-col items-center justify-start py-20"
+            className="snap-start relative min-h-[100dvh] w-full flex flex-col items-center justify-start py-20"
             aria-label="Expertise"
             style={{
                 backgroundColor: "#0d1a21",

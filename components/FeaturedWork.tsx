@@ -6,7 +6,7 @@ import Link from "next/link";
 export default function FeaturedWork() {
     return (
         <section id="featured-work"
-            className="snap-start relative min-h-screen w-full flex items-center justify-between px-6 py-20 max-w-7xl mx-auto"
+            className="snap-start relative min-h-[100dvh] w-full flex items-center justify-between px-6 py-20 max-w-7xl mx-auto"
             aria-labelledby="featured-work-title"
         >
             {/* Left column - big heading + description */}

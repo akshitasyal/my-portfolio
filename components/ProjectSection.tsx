@@ -16,12 +16,12 @@ const PROJECTS: Project[] = [
   },
   {
     id: 'ec2-cloud-cost-analyzer',
-title: 'EC2 Cloud Cost Analyzer',
-subtitle: 'AWS Cost Optimization Web App',
-description:
-  'A cloud cost monitoring tool that analyzes AWS EC2 instance pricing in real time, helping users compare instance types, track usage-based costs, and optimize cloud spending efficiently.',
-image: '/ec2-cloud-cost-analyzer.png',
-href: 'https://ec2-observe.vercel.app/',
+    title: 'EC2 Cloud Cost Analyzer',
+    subtitle: 'AWS Cost Optimization Web App',
+    description:
+      'A cloud cost monitoring tool that analyzes AWS EC2 instance pricing in real time, helping users compare instance types, track usage-based costs, and optimize cloud spending efficiently.',
+    image: '/ec2-cloud-cost-analyzer.png',
+    href: 'https://ec2-observe.vercel.app/',
 
 
   },
@@ -35,7 +35,7 @@ href: 'https://ec2-observe.vercel.app/',
     href: 'https://calmllama.life/',
 
   },
- 
+
 ]
 
 export default function ProjectsSection() {
@@ -63,15 +63,14 @@ export default function ProjectsSection() {
   return (
     <section
       ref={ref}
-      className="snap-start relative min-h-screen w-full flex flex-col items-center justify-start py-14"
+      className="snap-start relative min-h-[100dvh] w-full flex flex-col items-center justify-start py-14"
       aria-labelledby="projects-title"
     >
       <div className="w-full max-w-7xl px-6">
 
         {/* grid */}
         <div
-          className={`grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 items-stretch transition-all duration-700 ${
-          visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
+          className={`grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 items-stretch transition-all duration-700 ${visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
             }`}
         >
           {PROJECTS.map((p) => (
