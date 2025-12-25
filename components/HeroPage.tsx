@@ -46,7 +46,7 @@ export default function HeroPage() {
   return (
     <main
       id="home"
-      className="snap-start relative min-h-screen w-screen overflow-hidden"
+      className="relative h-screen w-screen overflow-hidden"
       style={{
         backgroundColor: "#0b1820",
         background:
